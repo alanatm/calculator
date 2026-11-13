@@ -74,6 +74,17 @@ button {
     height: 6rem;
     font-size: 1.5rem;
     font-weight: 500;
+    transition: transform 120ms ease, filter 120ms ease;
+}
+
+.calculator__button:hover,.calculator__button--number:hover{
+    transform: scale(0.98);
+    filter: brightness(0.9);
+}
+
+.calculator__button:active,.calculator__button--number:active{
+    transform: scale(0.94);
+    filter: brightness(0.75);
 }
 
 .calculator__button--result{
