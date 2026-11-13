@@ -12,10 +12,12 @@ const resultNumber = document.getElementById('result-number');
 
 const numberButton = document.querySelectorAll('.calculator__button--number');
 
+//Variables globales
 let num1 = "";
 let num2 = "";
 let operation = undefined;
 
+//Se obtiene el número al que se le da click y se guarda en num2 (num actual)
 numberButton.forEach(button => {
     button.addEventListener('click', (event) => {
         const clickedNumber = event.target.dataset.value;
